@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wait for us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .espacoimagem {
+      height: 300vh;
+    }
+  </style>
+</head>
+
+<!-- Sei que não demos .espaco, mas ao pesquisar como deixar um grande espaço entre o body e o footer,
+  foi isto que tive de fazer. ()-->
+
+<body class="bg-black text-white">
+  <section class="container py-4" aria-label="Login">
+    <form method="post" class="border border-white rounded p-4 mx-auto" style="max-width: 420px;">
+      <div class="mb-3 text-start">
+        <label for="login" class="form-label">Badge ID</label>
+        <input type="text" class="form-control bg-black text-white border-white"
+               id="login" name="login" autocomplete="badge">
+      </div>
+      <div class="mb-3 text-start">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control bg-black text-white border-white"
+               id="password" name="password" autocomplete="current-password">
+      </div>
+      <button type="submit" class="btn btn-outline-light">Ask for access</button>
+    </form>
+    <p class="text-center mt-3">
+      <a href="#" class="link-light" onclick="event.preventDefault();">having trouble remembering? visit our infirmaries!</a>
+    </p>
+  </section>
+
+<!-- Pus 'a' pois é suposto ser um link que não funciona, para deixar a imagem clicável sem  redirecionar -->
+
+  <div class="espacoimagem"></div>
+
+  <!-- Inserção do .espaco ^-->
+
+  <main class="container text-center py-5">
+    <a href="#" onclick="event.preventDefault();">
+      <img src="file:///C:/Users/ihave/OneDrive/Pictures/Screenshots%201/WhereItHappened.png"
+           class="img-fluid square-image"
+           alt="We are waiting">
+    </a>
+    <p class="mt-2">68°42'22.36"N 52°52'09.03"W</p>
+
+<!-- Pus 'a' pois é suposto ser um link que não funciona, para deixar a imagem clicável sem  redirecionar -->
+
+
+  </main>
+
+  <footer class="bg-black text-center text-danger py-4">
+    <div class="container">
+      <p class="mb-0">In due time. Our heaven will soon take place.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
